@@ -11,11 +11,16 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/PlayerMovement.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BallControl.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/BallSpin.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/PlayerMovement.cs" />
+      <option value="$PROJECT_DIR$/CameraFollow.cs" />
+      <option value="$PROJECT_DIR$/SpeedLimit.cs" />
+      <option value="$PROJECT_DIR$/BallControl.cs" />
+      <option value="$PROJECT_DIR$/BallSpin.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1toevHJsn9xC504o2AEt2yfOfSA" />
@@ -39,13 +44,14 @@
       <option name="presentableId" value="Default" />
       <updated>1623440100562</updated>
       <workItem from="1623440103900" duration="364000" />
+      <workItem from="1623441559446" duration="10997000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
