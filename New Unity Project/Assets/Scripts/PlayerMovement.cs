@@ -10,18 +10,20 @@ public class PlayerMovement : MonoBehaviour
     //Animation control parameters 
     public Animator animator;
     private bool isWalking;
-    private bool isDead;
-    private bool powerUsed;
-    private float deadTimer;
     private SpriteRenderer _spriteRenderer;
 
+    private Player playerScript;
     private void Start()
     {
         _spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+        playerScript = GetComponent<Player>();
     }
 
     void Update()
     {
+        //Deny input if dead
+        if (playerScript != null && playerScript.IsDead()) return;
+        //Get input
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
     }
@@ -43,4 +45,6 @@ public class PlayerMovement : MonoBehaviour
         
         animator.SetBool("isWalking",!movement.Equals(Vector2.zero));
     }
+    
+    
 }

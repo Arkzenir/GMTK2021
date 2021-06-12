@@ -13,13 +13,13 @@ TextureImporter:
     second: Bandit Ranger Die_2
   - first:
       213: -2567789934858874070
-    second: Bandit Ranger Die_6
+    second: Bandit Ranger Die_4
   - first:
       213: -980489777524164707
-    second: Bandit Ranger Die_8
+    second: Bandit Ranger Die_5
   - first:
       213: -918564516278213272
-    second: Bandit Ranger Die_9
+    second: Bandit Ranger Die_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -117,7 +117,7 @@ TextureImporter:
         width: 18
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -138,7 +138,7 @@ TextureImporter:
         width: 18
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -159,7 +159,7 @@ TextureImporter:
         width: 21
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -172,7 +172,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bandit Ranger Die_6
+      name: Bandit Ranger Die_4
       rect:
         serializedVersion: 2
         x: 132
@@ -180,7 +180,7 @@ TextureImporter:
         width: 24
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -193,7 +193,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bandit Ranger Die_8
+      name: Bandit Ranger Die_5
       rect:
         serializedVersion: 2
         x: 165
@@ -201,7 +201,7 @@ TextureImporter:
         width: 27
         height: 13
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -214,7 +214,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bandit Ranger Die_9
+      name: Bandit Ranger Die_3
       rect:
         serializedVersion: 2
         x: 103
@@ -222,7 +222,7 @@ TextureImporter:
         width: 21
         height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
