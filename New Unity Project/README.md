@@ -1,2 +1,2 @@
 # GMTK2021
-Porject for GMTK 2021
+Project for GMTK 2021
