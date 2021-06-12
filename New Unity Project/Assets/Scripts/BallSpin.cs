@@ -18,6 +18,7 @@ public class BallSpin : MonoBehaviour
             relativeDistance = transform.position - target.position;
         }
 
+        target = GameObject.FindWithTag("Player").transform;
 
     }
 
