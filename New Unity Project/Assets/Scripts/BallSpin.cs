@@ -11,28 +11,31 @@ public class BallSpin : MonoBehaviour
     public Vector3 relativeDistance = Vector3.zero;
     public bool once = true;
     public Rigidbody2D rb;
+    private GameObject player;
+    private BallControl playerControlScript;
     void Start()
     {
+        target = GameObject.FindWithTag("Player").transform;
         if(target != null) 
         {
             relativeDistance = transform.position - target.position;
         }
 
-        target = GameObject.FindWithTag("Player").transform;
-
+        player = GameObject.FindWithTag("Player");
+        playerControlScript = player.GetComponent<BallControl>();
     }
 
     // Update is called once per frame
     void LateUpdate()
     {
-        if (GameObject.FindWithTag("Player").GetComponent<BallControl>().spin)
+        if (playerControlScript.spin)
         {
             axis = new Vector3(0, 0, 1);
             rb.velocity = Vector2.zero;
             if (target != null)
             {
                 transform.position = (target.position + relativeDistance);
-                transform.RotateAround(target.position, axis, orbitDegreesPerSec);
+                transform.RotateAround(target.position, axis, orbitDegreesPerSec * Time.deltaTime);
             }
             if (once)
             {
@@ -44,10 +47,10 @@ public class BallSpin : MonoBehaviour
             relativeDistance = transform.position - target.position;
         }
 
-        if (GameObject.FindWithTag("Player").GetComponent<BallControl>().release)
+        if (playerControlScript.release)
         {
             rb.AddForce(-transform.up);
-            GameObject.FindWithTag("Player").GetComponent<BallControl>().release = false;
+            playerControlScript.release = false;
         }
     }
 }

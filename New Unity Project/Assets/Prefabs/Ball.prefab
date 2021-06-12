@@ -11,12 +11,13 @@ GameObject:
   - component: {fileID: 5912689518555774174}
   - component: {fileID: 284526294672348420}
   - component: {fileID: 8189489088503250377}
+  - component: {fileID: 5286092836011422100}
   - component: {fileID: 2549261231817644567}
   - component: {fileID: 5212688320936458765}
   - component: {fileID: 3433459053348610919}
   m_Layer: 0
   m_Name: Ball
-  m_TagString: Untagged
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 1583118167372620806}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -50,8 +51,8 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_GravityScale: 0
+  m_Material: {fileID: 6200000, guid: ac30fd5974615b24e9df332f3576762b, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -71,7 +72,21 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.15
+--- !u!114 &5286092836011422100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1583118167372620806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fdc1cf986db95b459fbe1f441249082, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 284526294672348420}
+  maxVelocity: 17
 --- !u!114 &2549261231817644567
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85,12 +100,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  orbitDistance: 10
+  orbitDistance: 3
   orbitDegreesPerSec: 180
-  axis: {x: 0, y: 0, z: 0}
+  axis: {x: 0, y: 0, z: 1}
   relativeDistance: {x: 0, y: 0, z: 0}
   once: 1
-  rb: {fileID: 0}
+  rb: {fileID: 284526294672348420}
 --- !u!212 &5212688320936458765
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -131,15 +146,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -546502382624182151, guid: 891a46891d09c104f88b20d26002a5d0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.32, y: 0.32}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!95 &3433459053348610919

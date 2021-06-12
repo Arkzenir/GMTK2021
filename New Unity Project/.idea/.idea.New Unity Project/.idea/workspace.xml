@@ -3,12 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="fa35a36a-6d1f-4775-8017-5cc87626650c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.New Unity Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.New Unity Project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Ball.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Ball.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Ball_Roll.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Ball_Roll.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Animation/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Player.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Player_Die.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Player_Die.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Player_Die_Loop.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Player_Die_Loop.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Player_Idle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Player_Idle.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Player_Power.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Player_Power.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Player_Walk.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Player_Walk.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ball.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ball.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Playground.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Playground.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallSpin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BallSpin.cs" afterDir="false" />
     </list>
@@ -48,6 +47,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -78,7 +78,7 @@
       <updated>1623453645906</updated>
       <workItem from="1623453651564" duration="4581000" />
       <workItem from="1623504313666" duration="1266000" />
-      <workItem from="1623505651209" duration="936000" />
+      <workItem from="1623505651209" duration="2883000" />
     </task>
     <servers />
   </component>
@@ -89,5 +89,11 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="425" y="187" key="run.anything.popup" timestamp="1623507672222">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1623507672222" />
   </component>
 </project>
