@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fa35a36a-6d1f-4775-8017-5cc87626650c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.New Unity Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.New Unity Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Ball.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Ball.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Ball_Roll.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Ball_Roll.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Player.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Ball.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Ball.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Playground.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Playground.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallSpin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BallSpin.cs" afterDir="false" />
-    </list>
+    <list default="true" id="fa35a36a-6d1f-4775-8017-5cc87626650c" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,14 +16,9 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BallSpin.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/Assets/BallSpin.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BallControl.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/BallSpin.cs" />
-      </list>
-    </option>
+    <changedPaths>
+      <option value="$PROJECT_DIR$/Assets/Scripts/BallSpin.cs" />
+    </changedPaths>
   </component>
   <component name="ProjectId" id="1tp6NitSCFdnsMgsnCBfubkS24F" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -56,16 +42,24 @@
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
       <method v="2" />
     </configuration>
     <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
       <method v="2" />
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -79,6 +73,7 @@
       <workItem from="1623453651564" duration="4581000" />
       <workItem from="1623504313666" duration="1266000" />
       <workItem from="1623505651209" duration="2883000" />
+      <workItem from="1623508990812" duration="6000" />
     </task>
     <servers />
   </component>

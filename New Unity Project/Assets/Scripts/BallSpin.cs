@@ -49,7 +49,7 @@ public class BallSpin : MonoBehaviour
 
         if (playerControlScript.release)
         {
-            rb.AddForce(-transform.up);
+            rb.AddForce(transform.up);
             playerControlScript.release = false;
         }
     }
