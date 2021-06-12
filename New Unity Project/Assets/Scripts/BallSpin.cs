@@ -24,7 +24,7 @@ public class BallSpin : MonoBehaviour
     // Update is called once per frame
     void LateUpdate()
     {
-        if (GameObject.Find("char").GetComponent<BallControl>().spin)
+        if (GameObject.FindWithTag("Player").GetComponent<BallControl>().spin)
         {
             axis = new Vector3(0, 0, 1);
             rb.velocity = Vector2.zero;
@@ -43,10 +43,10 @@ public class BallSpin : MonoBehaviour
             relativeDistance = transform.position - target.position;
         }
 
-        if (GameObject.Find("char").GetComponent<BallControl>().release)
+        if (GameObject.FindWithTag("Player").GetComponent<BallControl>().release)
         {
             rb.AddForce(-transform.up);
-            GameObject.Find("char").GetComponent<BallControl>().release = false;
+            GameObject.FindWithTag("Player").GetComponent<BallControl>().release = false;
         }
     }
 }

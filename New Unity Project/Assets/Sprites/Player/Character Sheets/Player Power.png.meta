@@ -1,16 +1,19 @@
 fileFormatVersion: 2
-guid: d45d6f3c7a734884fad4afe3409ecc33
+guid: 53c800327affc72489a6b2b19ab2b5fb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4283664341708290715
-    second: Bandit Melee Down_0
+      213: -6535399482106450816
+    second: Player Power_0
   - first:
-      213: 1532213382968603852
-    second: Bandit Melee Down_1
+      213: 7955977465927194464
+    second: Player Power_1
   - first:
-      213: 4634471256448451605
-    second: Bandit Melee Down_2
+      213: -4346339890074409541
+    second: Player Power_2
+  - first:
+      213: 3999505251347132876
+    second: Player Power_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -100,64 +103,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bandit Melee Down_0
+      name: Player Power_0
       rect:
         serializedVersion: 2
-        x: 5
+        x: 1
         y: 0
-        width: 21
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 23
+        height: 30
+      alignment: 9
+      pivot: {x: 0.6, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 565487f1afd5d84c0800000000000000
-      internalID: -4283664341708290715
+      spriteID: 08ce5cb0cc89d45a0800000000000000
+      internalID: -6535399482106450816
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bandit Melee Down_1
+      name: Player Power_1
       rect:
         serializedVersion: 2
         x: 37
         y: 0
-        width: 21
-        height: 29
+        width: 20
+        height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc471fb24f3834510800000000000000
-      internalID: 1532213382968603852
+      spriteID: 0675a994a5f496e60800000000000000
+      internalID: 7955977465927194464
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bandit Melee Down_2
+      name: Player Power_2
       rect:
         serializedVersion: 2
         x: 69
         y: 0
         width: 21
-        height: 29
+        height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5144e52ad03f05040800000000000000
-      internalID: 4634471256448451605
+      spriteID: bb5210bd5e2bea3c0800000000000000
+      internalID: -4346339890074409541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player Power_3
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 0
+        width: 31
+        height: 31
+      alignment: 9
+      pivot: {x: 0.45, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc1fad7f5d8118730800000000000000
+      internalID: 3999505251347132876
       vertices: []
       indices: 
       edges: []
