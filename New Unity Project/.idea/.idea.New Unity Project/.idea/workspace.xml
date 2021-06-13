@@ -43,13 +43,15 @@
     <setting file="file://$PROJECT_DIR$/Assets/Projectile.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DialogueSystem/DialogueBaseClass.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DialogueSystem/DialogueTrigger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/doorTrigger.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/DialogueSystem/DialogueLine.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/DialogueSystem/DialogueHolder.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/DialogueSystem/DialogueBaseClass.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/DialogueSystem/DialogueTrigger.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/DialogueSystem/DialogueLine.cs" />
+      <option value="$PROJECT_DIR$/Assets/doorTrigger.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1tp6NitSCFdnsMgsnCBfubkS24F" />

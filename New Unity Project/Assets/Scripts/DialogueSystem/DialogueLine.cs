@@ -18,6 +18,7 @@ namespace DialogueSystem
         {
             textHolder = GetComponent<Text>();
             imageHolder.sprite = characterSprite;
+
         }
 
         private void Start()
