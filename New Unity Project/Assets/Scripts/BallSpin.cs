@@ -13,6 +13,7 @@ public class BallSpin : MonoBehaviour
     public Rigidbody2D rb;
     private GameObject player;
     private BallControl playerControlScript;
+    private SpriteRenderer _spriteRenderer;
     void Start()
     {
         target = GameObject.FindWithTag("Player").transform;
@@ -23,6 +24,7 @@ public class BallSpin : MonoBehaviour
 
         player = GameObject.FindWithTag("Player");
         playerControlScript = player.GetComponent<BallControl>();
+        _spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -32,6 +34,9 @@ public class BallSpin : MonoBehaviour
         {
             axis = new Vector3(0, 0, 1);
             rb.velocity = Vector2.zero;
+            
+            _spriteRenderer.color = Color.cyan;
+            
             if (target != null)
             {
                 transform.position = (target.position + relativeDistance);
@@ -46,8 +51,12 @@ public class BallSpin : MonoBehaviour
             }
             relativeDistance = transform.position - target.position;
         }
+        else
+            _spriteRenderer.color = Color.white;
 
-        if (playerControlScript.release)
+
+
+            if (playerControlScript.release)
         {
             rb.AddForce(transform.up);
             playerControlScript.release = false;

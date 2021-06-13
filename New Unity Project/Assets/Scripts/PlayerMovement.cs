@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     //Animation control parameters 
     public Animator animator;
     private bool isWalking;
+    private bool lookingLeft = false;
     private SpriteRenderer _spriteRenderer;
 
     private Player playerScript;
@@ -39,8 +40,17 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.MovePosition(rb.position + movement * movementSpeed * Time.fixedDeltaTime);
         }
-        
-        _spriteRenderer.flipX = (movement.x < 0);
+
+        if (lookingLeft && movement.x > 0 )
+        {
+            _spriteRenderer.flipX = !lookingLeft;
+            lookingLeft = false;
+        }
+        else if (!lookingLeft && movement.x < 0)
+        {
+            _spriteRenderer.flipX = !lookingLeft;
+            lookingLeft = true;
+        }
 
         
         animator.SetBool("isWalking",!movement.Equals(Vector2.zero));

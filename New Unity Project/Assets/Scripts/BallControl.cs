@@ -23,6 +23,8 @@ public class BallControl : MonoBehaviour
         }
         
     }
+    
+    
 
     void FixedUpdate()
     {

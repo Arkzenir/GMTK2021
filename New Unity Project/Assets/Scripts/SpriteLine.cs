@@ -16,15 +16,15 @@ public class SpriteLine : MonoBehaviour
     {
         _control = GetComponent<BallControl>();
         _renderer = GetComponent<LineRenderer>();
-
-        ConnectTo = GameObject.FindWithTag("Ball").transform;
+        
     }
 
-    private void LateUpdate()
+    private void FixedUpdate()
     {
         
         if (_renderer != null)
         {
+            ConnectTo = GameObject.FindWithTag("Ball").transform;
             if (ConnectTo != null && _control.spin)
             {
                 if (UpdateChain)
@@ -33,7 +33,8 @@ public class SpriteLine : MonoBehaviour
  
                     Vector3[] positions = {
                         transform.position,
-                        (ConnectTo.position - transform.position).normalized * spriteScale * spriteCount
+                        //(ConnectTo.localPosition - transform.localPosition).normalized * spriteScale * spriteCount
+                        ConnectTo.position
                     };
                     
                     
