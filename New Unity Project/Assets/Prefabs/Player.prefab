@@ -202,7 +202,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.4
+  m_Radius: 0.75
 --- !u!114 &8227981025042991356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -268,7 +268,7 @@ LineRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 1
+        value: 0.09859085
         inSlope: 0
         outSlope: 0
         tangentMode: 0
