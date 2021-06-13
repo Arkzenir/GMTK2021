@@ -4,7 +4,6 @@ using UnityEngine;
 public class Attack : MonoBehaviour, IHurt
 {
     public float damage;
-    public float speed;
     public bool projectile = false;
     public bool aoe;
     private bool once;
