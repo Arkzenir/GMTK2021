@@ -13,7 +13,6 @@ namespace DialogueSystem
         {
             if (player.gameObject.tag == "Player")
             {
-                Debug.Log("zooort");
                 dialogueBox.SetActive(true);
                 gameObject.SetActive(false);
             }

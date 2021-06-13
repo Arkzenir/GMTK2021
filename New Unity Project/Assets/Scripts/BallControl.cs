@@ -35,7 +35,8 @@ public class BallControl : MonoBehaviour
             animator.SetBool("powerUsed", true);
         }
         
-        if (Input.GetMouseButton(1))
+        if (Input.GetMouseButton(1)
+        && spin)
         {
             spin = false;
             release = true;
