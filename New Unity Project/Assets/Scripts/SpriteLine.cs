@@ -24,7 +24,7 @@ public class SpriteLine : MonoBehaviour
         
         if (_renderer != null)
         {
-            ConnectTo = GameObject.FindWithTag("Ball").transform;
+            if (GameObject.FindWithTag("Ball")) ConnectTo = GameObject.FindWithTag("Ball").transform;
             if (ConnectTo != null && _control.spin)
             {
                 if (UpdateChain)

@@ -6,8 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Playground.unity
+    path: Assets/Scenes/Dungeon.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Area 1.unity
+    guid: dfc7ea5669bb21f47bc14592cbb65c85
   - enabled: 1
     path: Assets/Scenes/Area 2.unity
     guid: f73a25cfc272a3e4c90c30cee9412b41
