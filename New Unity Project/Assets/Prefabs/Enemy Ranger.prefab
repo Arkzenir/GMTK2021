@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 7469158750179309435}
   - component: {fileID: 4016641756300040000}
   - component: {fileID: 4548352935164335680}
+  - component: {fileID: 6054836993576860635}
   m_Layer: 0
   m_Name: Enemy Ranger
   m_TagString: Enemy
@@ -58,7 +59,7 @@ Transform:
   m_GameObject: {fileID: 3660530443890109627}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_Children:
   - {fileID: 2317895248493734867}
   m_Father: {fileID: 0}
@@ -160,6 +161,25 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6054836993576860635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3660530443890109627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b9a78e75b13a00468ca60f296858262, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bow: {fileID: 2317895248493734867}
+  aim: {fileID: 1384798813970311232}
+  attack: {fileID: 2552748508832602218, guid: 1508b4cc7acdf0c4d8790f200011b775, type: 3}
+  attackDelay: 2.5
+  attackRange: 5
+  detectRange: 8
+  bowFloatDist: 0.2
 --- !u!1 &4001793014271202346
 GameObject:
   m_ObjectHideFlags: 0
@@ -186,7 +206,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4001793014271202346}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.0032, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1384798813970311232}

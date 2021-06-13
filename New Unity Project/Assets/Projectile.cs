@@ -2,29 +2,36 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Projectile : MonoBehaviour
+public class Projectile : MonoBehaviour,IProjectile
 {
     // Start is called before the first frame update
     public float speed;
     private bool set = false;
-    private Transform target;
+    private Vector2 target;
+    private Vector2 dir;
 
     void FixedUpdate()
     {
-        if (target)
+        if (target != Vector2.zero)
         {
-            Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+            transform.position = (Vector2)transform.position + dir * speed * Time.deltaTime;
         }
     }
 
-    public bool SetTarget(Transform t)
+    public bool SetTarget(Vector2 pos)
     {
-        if (t && !set)
+        if (pos != Vector2.zero && !set)
         {
-            target = t;
+            target = pos;
+            dir = target - (Vector2)transform.position;
+            dir.Normalize();
             set = true;
             return true;
         }
         return false;
+    }
+    
+    void OnBecameInvisible() {
+        Destroy(gameObject);
     }
 }

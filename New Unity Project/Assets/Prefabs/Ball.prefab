@@ -86,7 +86,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 284526294672348420}
-  maxVelocity: 17
+  maxVelocity: 10
+  animator: {fileID: 3433459053348610919}
 --- !u!114 &2549261231817644567
 MonoBehaviour:
   m_ObjectHideFlags: 0

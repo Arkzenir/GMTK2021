@@ -29,7 +29,7 @@ public class Player : MonoBehaviour, IDamageable
             SetIsDead(!isDead);
             Debug.Log("Player is dead: " + IsDead());
         }
-    #endif
+#endif
         if (hp <= 0 || isDead)
         {
             if (dieOnce)
