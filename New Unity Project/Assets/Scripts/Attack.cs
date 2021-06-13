@@ -21,12 +21,13 @@ public class Attack : MonoBehaviour, IHurt
         }
         else
         {
-            if (!once)
+            if (aoe)
             {
                 target.GetComponent<IDamageable>().SetHP(target.GetComponent<IDamageable>().GetHP() - damage / Time.deltaTime);
             }
-            else
+            else if (once)
             {
+                
                 target.GetComponent<IDamageable>().SetHP(target.GetComponent<IDamageable>().GetHP() - damage);
                 if (projectile)
                 {

@@ -11,31 +11,43 @@ public class EnemyMelee : MonoBehaviour
     private bool following = false;
     private bool attacking = false;
     private float attackTime = 0;
-    private float fadeTime = 0; 
+    private float fadeTime = 0;
+    private bool setDead = false;
+    private BoxCollider2D coll;
     public List<GameObject> attacks;
     //Public
     public GameObject attack;
+    public Animator animator;
     public float speed;
     public float attackDelay;
     public float attackRange;
     public float detectRange;
     public float attackFade;
+    public bool dead = false;
     void Start()
     {
         target = GameObject.FindWithTag("Player");
         attacks = new List<GameObject>();
+        coll = GetComponent<BoxCollider2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
+#if UNITY_EDITOR
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            Die();
+        }
+#endif
         //If player not in range, return
         following = true;
-        if (Vector2.Distance(target.transform.position, transform.position) > detectRange)
+        if (Vector2.Distance(target.transform.position, transform.position) > detectRange || dead)
         {
             following = false;
             return;
         }
+        
         //Reset Countdowns
         if(attackTime <= 0f) attackTime = attackDelay;
         if (fadeTime <= 0f) fadeTime = attackFade; 
@@ -66,10 +78,15 @@ public class EnemyMelee : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (!following) return;
+        animator.SetBool("moving", false);
+        if (!following || dead) return;
+        
+        Vector2 dir = target.transform.position - transform.position;
+        animator.SetFloat("verticalDir", dir.y);
         
         if (!attacking)
         {
+            animator.SetBool("moving", true);
             transform.position = Vector2.MoveTowards(transform.position, target.transform.position, speed * Time.deltaTime);
             if (Vector2.Distance(target.transform.position, transform.position) < attackRange *  0.60f)
             {
@@ -91,9 +108,20 @@ public class EnemyMelee : MonoBehaviour
         attack.transform.position = attackPos;
         
         Vector2 dir = targetTransform.position - transform.position;
-        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg - 90;
+        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
         attack.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         
         following = true;
+    }
+
+    public void Die()
+    {
+        if (!setDead)
+        {
+            dead = true;
+            animator.SetTrigger("isDead");
+            setDead = true;
+            coll.enabled = false;
+        }
     }
 }

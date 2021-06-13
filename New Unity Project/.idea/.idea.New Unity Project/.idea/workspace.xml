@@ -20,16 +20,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fa35a36a-6d1f-4775-8017-5cc87626650c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.New Unity Project/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.New Unity Project/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.New Unity Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.New Unity Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EnemyRanger.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EnemyRanger.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Projectile.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Projectile.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SpriteLine.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SpriteLine.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/doorTrigger.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/doorTrigger.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Enemy Melee.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Enemy Melee.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Enemy Ranger.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Enemy Ranger.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Enemy_Melee_Corpse.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Enemy_Melee_Corpse.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Enemy_Melee_Die.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Enemy_Melee_Die.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Enemy_Melee_Idle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Enemy_Melee_Idle.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Arrow.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Arrow.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Enemy Melee.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Enemy Melee.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Melee Attack.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Melee Attack.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Playground.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Playground.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Attack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Attack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyMelee.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyMelee.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyRanger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyRanger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Enemies/Slash.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Enemies/Slash.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,8 +65,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EnemyMelee.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Attack.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/EnemyRanger.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
       </list>
     </option>
   </component>
@@ -111,7 +120,7 @@
       <workItem from="1623505651209" duration="2883000" />
       <workItem from="1623508990812" duration="6000" />
       <workItem from="1623519189540" duration="7935000" />
-      <workItem from="1623579101448" duration="328000" />
+      <workItem from="1623579101448" duration="6688000" />
     </task>
     <servers />
   </component>

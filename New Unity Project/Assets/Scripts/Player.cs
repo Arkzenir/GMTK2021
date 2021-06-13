@@ -50,6 +50,7 @@ public class Player : MonoBehaviour, IDamageable
     public void SetHP(float value)
     {
         hp = value;
+        Debug.Log("HP is: " + hp);
     }
 
     public bool IsDead()
@@ -63,5 +64,10 @@ public class Player : MonoBehaviour, IDamageable
         animator.SetBool("isDead", val);
         animator.SetBool("ghost", val);
     }
-    
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (!other.gameObject.GetComponent<Attack>()) return;
+        other.gameObject.GetComponent<Attack>().TakeDamage(gameObject);
+    }
 }
