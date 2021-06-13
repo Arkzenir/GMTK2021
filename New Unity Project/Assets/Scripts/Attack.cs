@@ -39,5 +39,11 @@ public class Attack : MonoBehaviour, IHurt
             return true; //Attack has connected
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (!other.gameObject.CompareTag("Player")) return;
+        TakeDamage(other.gameObject);
+    }
     
 }

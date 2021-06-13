@@ -65,9 +65,10 @@ public class Player : MonoBehaviour, IDamageable
         animator.SetBool("ghost", val);
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (!other.gameObject.GetComponent<Attack>()) return;
+        if (!other.gameObject.GetComponent<Attack>() || !other.gameObject.GetComponent<Collider2D>().isTrigger) return;
         other.gameObject.GetComponent<Attack>().TakeDamage(gameObject);
     }
+    
 }

@@ -1,63 +1,59 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class SpriteLine : MonoBehaviour
 {
-    public List<Transform> ConnectTo;
+    public Transform ConnectTo;
     public bool UpdateChain = true;
     public float spriteScale = 1f;
- 
-    void Update()
+
+    private BallControl _control;
+    private LineRenderer _renderer;
+
+    private void Start()
     {
-        LineRenderer renderer = GetComponent<LineRenderer>();
-        if (renderer != null)
+        _control = GetComponent<BallControl>();
+        _renderer = GetComponent<LineRenderer>();
+
+        ConnectTo = GameObject.FindWithTag("Ball").transform;
+    }
+
+    private void LateUpdate()
+    {
+        
+        if (_renderer != null)
         {
-            if (ConnectTo.Count != 0)
+            if (ConnectTo != null && _control.spin)
             {
                 if (UpdateChain)
                 {
-                    foreach (var transform in ConnectTo)
-                    {
-                        int spriteCount = Mathf.FloorToInt(Vector3.Distance(transform.position, transform.position) / spriteScale);
+                    int spriteCount = Mathf.FloorToInt(Vector3.Distance(ConnectTo.position, transform.position) / spriteScale);
  
-                        Vector3[] positions = new Vector3[] {
-                            transform.position,
-                            (transform.position - transform.position).normalized * spriteScale * spriteCount
-                        };
+                    Vector3[] positions = {
+                        transform.position,
+                        (ConnectTo.position - transform.position).normalized * spriteScale * spriteCount
+                    };
+                    
+                    
+                    _renderer.positionCount = positions.Length;
+                    _renderer.SetPositions(positions);
  
-                        renderer.positionCount = positions.Length;
-                        renderer.SetPositions(positions);
- 
-                        if (renderer.material != null)
-                            renderer.material.mainTextureScale = new Vector2(spriteScale * spriteCount, 1);
-                        else
-                            Debug.LogError(name + "'s Line Renderer has no material!");
-                    }
+                    if (_renderer.material != null)
+                        _renderer.material.mainTextureScale = new Vector2(spriteScale * spriteCount, 1);
+                    else
+                        Debug.LogError(name + "'s Line Renderer has no material!");
                 }
             }
             else
             {
-                renderer.positionCount = 0;
+                _renderer.positionCount = 0;
             }
         }
         else
         {
             Debug.Log(name + " has no LineRenderer component!");
         }
-    }
-
-    public bool AddBall(Transform t)
-    {
-        if (t == null) return false;
-        ConnectTo.Add(t);
-        return true;
-    }
-    
-    public bool RemoveBall(Transform t)
-    {
-        if (t == null || !ConnectTo.Contains(t)) return false;
-        ConnectTo.Remove(t);
-        return true;
     }
 }

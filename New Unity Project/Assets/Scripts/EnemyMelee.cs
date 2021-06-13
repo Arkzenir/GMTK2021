@@ -40,6 +40,19 @@ public class EnemyMelee : MonoBehaviour
             Die();
         }
 #endif
+        //Remove previously creeated attack object
+        if(fadeTime > 0f){
+            fadeTime -= Time.deltaTime;
+            if(fadeTime <= 0f){
+                if (attacks.Any())
+                {
+                    Destroy(attacks[attacks.Count - 1]);
+                    attacks.RemoveAt(attacks.Count - 1);
+                    attacking = false;
+                }
+            }
+        }
+
         //If player not in range, return
         following = true;
         if (Vector2.Distance(target.transform.position, transform.position) > detectRange || dead)
@@ -61,18 +74,6 @@ public class EnemyMelee : MonoBehaviour
             }
         }
         
-        //Remove previously creeated attack object
-        if(fadeTime > 0f){
-            fadeTime -= Time.deltaTime;
-            if(fadeTime <= 0f){
-                if (attacks.Any())
-                {
-                    Destroy(attacks[attacks.Count - 1]);
-                    attacks.RemoveAt(attacks.Count - 1);
-                    attacking = false;
-                }
-            }
-        }
         
     }
 
@@ -114,6 +115,14 @@ public class EnemyMelee : MonoBehaviour
         following = true;
     }
 
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Ball") && !target.gameObject.GetComponent<BallControl>().spin)
+        {
+            Die();
+        }
+    }
+    
     public void Die()
     {
         if (!setDead)

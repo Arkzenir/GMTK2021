@@ -10,7 +10,9 @@ namespace DialogueSystem
     {
         
         private Text textHolder;
-        [SerializeField] private string input;
+        [SerializeField]
+        [TextArea]
+        private string input;
         [SerializeField] private Sprite characterSprite;
         [SerializeField] private Image imageHolder;
 

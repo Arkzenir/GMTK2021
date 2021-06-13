@@ -10,7 +10,6 @@ public class EnemyRanger : MonoBehaviour
     //AI variables
     private GameObject target;
     private bool tracking = false;
-    private bool attacking = false;
     private float attackTime = 0;
     private bool setDead = false;
     //Reference
@@ -72,7 +71,6 @@ public class EnemyRanger : MonoBehaviour
                 attackTime -= Time.deltaTime;
                 if (attackTime <= 0f)
                 {
-                    attacking = true;
                     Attack(target.transform);
                 }
             }
