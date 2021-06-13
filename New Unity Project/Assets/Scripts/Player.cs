@@ -2,13 +2,16 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour, IDamageable
 {
     private float hp;
     private bool isDead;
-    public float startHP;
+
+    private SpriteRenderer _spriteRenderer;
     
+    public float startHP;
     
     public Animator animator;
 
@@ -18,6 +21,7 @@ public class Player : MonoBehaviour, IDamageable
     {
         hp = startHP;
         isDead = false;
+        _spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -30,6 +34,15 @@ public class Player : MonoBehaviour, IDamageable
             Debug.Log("Player is dead: " + IsDead());
         }
 #endif
+
+        _spriteRenderer.color = Color.Lerp(Color.red, Color.white, hp / startHP);
+        
+        //Can restart if dead
+        if (Input.GetKeyDown(KeyCode.R) && isDead)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+        
         if (hp <= 0 || isDead)
         {
             if (dieOnce)
@@ -61,8 +74,7 @@ public class Player : MonoBehaviour, IDamageable
     public void SetIsDead(bool val)
     {
         isDead = val;
-        animator.SetBool("isDead", val);
-        animator.SetBool("ghost", val);
+        animator.SetTrigger("isDead");
     }
 
     private void OnTriggerEnter2D(Collider2D other)
