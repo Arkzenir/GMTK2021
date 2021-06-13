@@ -38,6 +38,7 @@ public class EnemyRanger : MonoBehaviour
         if (Vector2.Distance(target.transform.position, transform.position) > detectRange)
         {
             tracking = false;
+            bow.gameObject.SetActive(tracking);
             return;
         }
 
@@ -75,7 +76,7 @@ public class EnemyRanger : MonoBehaviour
         bow.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
             
         targetDir.Normalize();
-        bow.position = (targetDir * bowFloatDist);
+        bow.localPosition = (targetDir * bowFloatDist);
     }
     
     private void Attack(Transform targetTransform)
