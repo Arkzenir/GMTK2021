@@ -2119,7 +2119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   finished: 0
-  input: An apparition? I will not fall victiom to more lies.
+  input: An apparition? I will not fall victim to more lies.
   characterSprite: {fileID: 21300000, guid: 04f5be889c481f84e85559916a779ab5, type: 3}
   imageHolder: {fileID: 696922235}
 --- !u!114 &579120981
