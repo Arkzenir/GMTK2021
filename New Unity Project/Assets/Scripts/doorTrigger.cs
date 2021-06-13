@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class doorTrigger : MonoBehaviour
 {
@@ -12,6 +13,10 @@ public class doorTrigger : MonoBehaviour
         if (player.gameObject.tag == "Player")
         {
             doorKey.SetActive(true);
+            if (Input.GetKey(KeyCode.E))
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            }
 
 
 
